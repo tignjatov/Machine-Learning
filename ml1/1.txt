@@ -1,0 +1,29 @@
+TODO popuniti odgovorima na pitanja iz problema 1
+
+a. Word2Vec je algoritam koji transformiše reči iz teksta u vektore realnih brojeva, na takav način da slične reči imaju slične vektore. Drugim rečima, on omogućava da računar razume semantičko značenje reči, tj. da zna koje reči imaju slična značenja i kako su međusobno povezane.
+
+Word2Vec "uči" značenje reči tako što analizira kontekst u kojem se reči pojavljuju u velikim količinama teksta. Ako se dve reči često pojavljuju u sličnim rečenicama, verovatno imaju slično značenje i dobiće slične vektorske predstave.
+
+
+b. Sve tri su varijante Naive Bayes klasifikatora, koji se zasniva na Bayesovoj teoremi i pretpostavci da su svi atributi nezavisni jedni od drugih.Glavna razlika među njima je u tipu podataka koje očekuju i načinu na koji računaju verovatnoće.
+
+1. Gaussian Naive Bayes
+Koristi se za: kontinuirane podatke (npr. visina, težina, brzina...).
+Pretpostavlja da su vrednosti atributa normalno raspodeljene.
+Za svaku klasu i atribut računa srednju vrednost i standardnu devijaciju, i koristi Gaussian funkciju da proceni verovatnoću.
+
+2. Multinomial Naive Bayes
+Koristi se za: brojčane podatke koji predstavljaju učestalost nečega.
+Pretpostavlja da su podaci diskretni brojevi.
+Najčešće korišćen u tekstualnoj klasifikaciji (spam filteri, analiza sentimenta), gde se broji koliko puta se koja reč pojavljuje.
+
+3. Bernoulli Naive Bayes
+Koristi se za: binarne podatke (npr. da li je neka reč prisutna u dokumentu ili nije — 1 ili 0).
+Gleda samo prisustvo/odsustvo osobine, ne broj pojavljivanja.
+Koristi se u tekstualnoj klasifikaciji, ali u situacijama kada je bitno da li se neka reč pojavila, a ne koliko puta.
+
+c. Linearna separabilnost znači da se klase podataka mogu odvojiti pravom linijom (u 2D), ravni (u 3D) ili hiper-ravni (u višim dimenzijama), tj. da postoji neka linearna granica koja potpuno razdvaja klase bez preklapanja.
+Data set iris.csv ima 3 vrste irisa, to su Setosa, Versicol i Virginica. Setosa je lako linearno separabilna za razliku od ostale dve vrste.
+Versicolor i Virginica nisu potpuno linearno separabilne. Postoji preklapanje između njih, pa nije moguća savršena linearna podela bez grešaka.
+Pa na osnovu toga možemo zaključiti da dataset iris.csv nije u celosti linearno separabilan.
+Linearnom granicom možemo razdvojiti Setosu, ali Versicolor i Virginica zahtevaju nelinearne metode za bolju klasifikaciju.

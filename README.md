@@ -11,7 +11,7 @@ Built and trained a convolutional neural network to control a vehicle in real-ti
 - Tools: Udacity simulator, OpenCV
 - Output: `model.h5`, `drive.py`
 
-### Applied ML Models (`applied_ml/`)
+### Applied ML Models (`ml1`)
 Implemented and evaluated multiple ML models across different tasks:
 - Polynomial Regression (2a)
 - k-NN classification (2b)
